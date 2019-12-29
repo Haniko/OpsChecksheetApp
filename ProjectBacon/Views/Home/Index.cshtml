@@ -1,0 +1,18 @@
+﻿@model IEnumerable<ProjectBacon.Models.ChecklistType>
+
+<div class="form-horizontal">
+
+    <hr />
+    <div class="container">
+        <div class="row">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-3 checklistTypes">
+                    @Html.ActionLink(item.Name, "Tasks", "ChecklistTasks", new { id = item.Id }, null)
+                </div>
+            }
+        </div>
+    </div>
+</div>
+@Styles.Render("~/Content/checklisttypes.css")

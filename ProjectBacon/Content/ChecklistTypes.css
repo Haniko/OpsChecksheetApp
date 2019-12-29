@@ -1,0 +1,10 @@
+﻿.checklistTypes {
+    border-style: solid;
+    border-width: 0.3px;
+    border-color: #260d1a;
+    margin: 10px;
+    padding-top: 10px;
+    position: relative;
+    color: #4f126b;
+    background: #fafafa;
+}
